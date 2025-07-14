@@ -1,0 +1,49 @@
+:root {
+  --main-color: #1f2261;
+  --text-color: #808080;
+}
+main {
+  .container {
+    background-color: #eceaea21;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    .header {
+      h1 {
+        color: var(--main-color);
+      }
+      p {
+        font-size: 1.2rem;
+        color: var(--text-color);
+      }
+    }
+    .converter-body {
+      .inverse-inputs {
+        position: relative;
+        span {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          background-color: var(--main-color);
+          position: absolute;
+          top: -20px;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: all 0.4s ease-in-out;
+          cursor: pointer;
+          i {
+            color: #fff;
+          }
+          &:hover {
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    max-width: 45%;
+    margin: 0 auto;
+  }
+}

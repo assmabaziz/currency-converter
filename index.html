@@ -1,16 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/all.min.css" rel="stylesheet">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-     <h1 class="">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/images/exchange .png" />
+    <link href="/css/all.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Currecy Converter</title>
+  </head>
+  <body>
+    <main class="py-5">
+      <div class="container border border-1 border-dark-subtle p-2 rounded-4">
+        <div class="header text-center mb-5">
+          <h1>Currency converter</h1>
+          <p class="mb-0">Check live rates, set rate alerts,</p>
+          <p>receive notifications and more.</p>
+        </div>
+        <div class="converter-body py-3">
+          <div class="amount mb-3 p-3">
+            <h5 class="mb-3">
+              Amount
+            </h5>
+            <div class="row justify-content-center">
+              <div class="col-md-5">
+                <input
+                  class="form-control"
+                  list="datalistOptions"
+                  id="exampleDataList"
+                  placeholder="Type currency to search..."
+                />
+                <datalist id="datalistOptions">
+                  <option value="San Francisco"></option>
+                  <option value="New York"></option>
+                  <option value="Seattle"></option>
+                  <option value="Los Angeles"></option>
+                  <option value="Chicago"></option>
+                </datalist>
+              </div>
+              <div class="col-md-5">
+                <div class="mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Type amount"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inverse-inputs mb-4 mt-2 border-top">
+            <span class="d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-right-left fa-rotate-90"></i>
+            </span>
+          </div>
+          <div class="converted-amount mt-4 p-3">
+            <h5 class="mb-3">Converted amount</h5>
+            <div class="row justify-content-center">
+              <div class="col-md-5">
+                <input
+                  class="form-control"
+                  list="datalistOptions"
+                  id="exampleDataList"
+                  placeholder="Type currency to search..."
+                />
+                <datalist id="datalistOptions">
+                  <option value="San Francisco"></option>
+                  <option value="New York"></option>
+                  <option value="Seattle"></option>
+                  <option value="Los Angeles"></option>
+                  <option value="Chicago"></option>
+                </datalist>
+              </div>
+              <div class="col-md-5">
+                <div class="mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Type amount"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result p-3 ">
+          <h5>
+            Indicative exchange rate
+          </h5>
+          <div>
+            <sapn class="from" id="from">000</sapn> =
+            <sapn class="to" id="to">000</sapn>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
