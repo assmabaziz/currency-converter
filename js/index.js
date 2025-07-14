@@ -5,9 +5,11 @@ const amountTo = document.getElementById("amountTo");
 const currencyTo = document.getElementById("currencyTo");
 const currencyToOptions = document.getElementById("currencyToOptions");
 const btnExchangeCurrency = document.getElementById("btnExchangeCurrency");
-// amountFrom.addEventListener('input', function(){
-//     console.log(amountFrom)
-// })
+const courseFrom = document.getElementById("courseFrom");
+const courseTo = document.getElementById("courseTo");
+
+
+
 btnExchangeCurrency.addEventListener('click', ()=> {
     const amountFromValue = amountFrom.value;
     const currencyFromValue = currencyFrom.value
