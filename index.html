@@ -19,18 +19,16 @@
         </div>
         <div class="converter-body py-3">
           <div class="amount mb-3 p-3">
-            <h5 class="mb-3">
-              Amount
-            </h5>
+            <h5 class="mb-3">Amount</h5>
             <div class="row justify-content-center">
               <div class="col-md-5">
                 <input
                   class="form-control"
-                  list="datalistOptions"
-                  id="exampleDataList"
+                  list="currencyFromOptions"
+                  id="currencyFrom"
                   placeholder="Type currency to search..."
                 />
-                <datalist id="datalistOptions">
+                <datalist id="currencyFromOptions">
                   <option value="San Francisco"></option>
                   <option value="New York"></option>
                   <option value="Seattle"></option>
@@ -43,7 +41,7 @@
                   <input
                     type="number"
                     class="form-control"
-                    id="exampleFormControlInput1"
+                    id="amountFrom"
                     placeholder="Type amount"
                   />
                 </div>
@@ -51,7 +49,10 @@
             </div>
           </div>
           <div class="inverse-inputs mb-4 mt-2 border-top">
-            <span class="d-flex justify-content-center align-items-center">
+            <span
+              class="d-flex justify-content-center align-items-center"
+              id="btnExchangeCurrency"
+            >
               <i class="fa-solid fa-right-left fa-rotate-90"></i>
             </span>
           </div>
@@ -61,11 +62,11 @@
               <div class="col-md-5">
                 <input
                   class="form-control"
-                  list="datalistOptions"
-                  id="exampleDataList"
+                  list="currencyToOptions"
+                  id="currencyTo"
                   placeholder="Type currency to search..."
                 />
-                <datalist id="datalistOptions">
+                <datalist id="currencyToOptions">
                   <option value="San Francisco"></option>
                   <option value="New York"></option>
                   <option value="Seattle"></option>
@@ -78,7 +79,7 @@
                   <input
                     type="number"
                     class="form-control"
-                    id="exampleFormControlInput1"
+                    id="amountTo"
                     placeholder="Type amount"
                   />
                 </div>
@@ -86,10 +87,8 @@
             </div>
           </div>
         </div>
-        <div class="result p-3 ">
-          <h5>
-            Indicative exchange rate
-          </h5>
+        <div class="result p-3">
+          <h5>Indicative exchange rate</h5>
           <div>
             <sapn class="from" id="from">000</sapn> =
             <sapn class="to" id="to">000</sapn>
@@ -98,4 +97,5 @@
       </div>
     </main>
   </body>
+  <script src="./js/index.js"></script>
 </html>
